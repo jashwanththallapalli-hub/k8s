@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenkins Learning Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">Jenkins Learning Hub</div>
+        <a href="#faq" class="btn btn-outline">FAQs</a>
+      </nav>
+      <div class="hero-content">
+        <p class="tag">From beginner to job-ready CI/CD skills</p>
+        <h1>Learn Jenkins with curated resources, roadmap, and FAQs</h1>
+        <p>
+          Everything you need to start and grow with Jenkins: docs, videos,
+          hands-on labs, and interview-focused practice.
+        </p>
+        <a href="#resources" class="btn">Explore Resources</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="resources" class="section">
+        <h2>Top Jenkins Learning Resources</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Official Jenkins Documentation</h3>
+            <p>Best source for installation, pipelines, plugins, and security.</p>
+            <a href="https://www.jenkins.io/doc/" target="_blank" rel="noreferrer">Visit Docs</a>
+          </article>
+          <article class="card">
+            <h3>Jenkins YouTube Tutorials</h3>
+            <p>Visual walkthroughs for freestyle jobs, declarative pipelines, and integrations.</p>
+            <a href="https://www.youtube.com/results?search_query=jenkins+tutorial" target="_blank" rel="noreferrer">Watch Tutorials</a>
+          </article>
+          <article class="card">
+            <h3>Hands-On Labs</h3>
+            <p>Practice creating pipelines, adding stages, and integrating Docker/GitHub.</p>
+            <a href="https://www.jenkins.io/doc/tutorials/" target="_blank" rel="noreferrer">Start Labs</a>
+          </article>
+          <article class="card">
+            <h3>Jenkins Pipeline Syntax Generator</h3>
+            <p>Generate pipeline snippets quickly and understand Jenkinsfile syntax.</p>
+            <a href="https://www.jenkins.io/doc/book/pipeline/syntax/" target="_blank" rel="noreferrer">Open Guide</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section roadmap">
+        <h2>Suggested Jenkins Learning Path</h2>
+        <ol>
+          <li>Understand CI/CD basics and Jenkins architecture.</li>
+          <li>Install Jenkins locally or run with Docker.</li>
+          <li>Create freestyle jobs and connect Git repository.</li>
+          <li>Write Jenkinsfile (declarative pipeline) with stages.</li>
+          <li>Add test/build/deploy steps and notifications.</li>
+          <li>Learn plugins, credentials, and role-based access control.</li>
+          <li>Practice interview questions and troubleshoot failed pipelines.</li>
+        </ol>
+      </section>
+
+      <section id="faq" class="section">
+        <h2>Most Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <details>
+            <summary>What is Jenkins used for?</summary>
+            <p>Jenkins automates software workflows such as building, testing, and deploying applications as part of CI/CD.</p>
+          </details>
+          <details>
+            <summary>Is Jenkins free?</summary>
+            <p>Yes. Jenkins is open-source and free to use, with a large plugin ecosystem.</p>
+          </details>
+          <details>
+            <summary>Do I need coding experience to learn Jenkins?</summary>
+            <p>Basic command-line and Git knowledge is enough to start. Scripting knowledge helps for advanced pipelines.</p>
+          </details>
+          <details>
+            <summary>What is a Jenkinsfile?</summary>
+            <p>A Jenkinsfile is a text file in your repo that defines your CI/CD pipeline as code.</p>
+          </details>
+          <details>
+            <summary>How long does it take to learn Jenkins?</summary>
+            <p>You can learn the basics in 1-2 weeks with regular practice and build production-ready skills in 1-2 months.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built for learners who want practical Jenkins mastery.</p>
+    </footer>
+  </body>
+</html>

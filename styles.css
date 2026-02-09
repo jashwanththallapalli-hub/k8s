@@ -1,0 +1,138 @@
+:root {
+  --bg: #0f172a;
+  --bg-soft: #111827;
+  --card: #1f2937;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #22d3ee;
+  --accent-2: #38bdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg) 0%, #020617 100%);
+  line-height: 1.6;
+}
+
+.hero {
+  padding: 2rem 6vw 5rem;
+  background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.25), transparent 45%);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+}
+
+.hero-content {
+  max-width: 760px;
+  margin-top: 3.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  margin: 0.8rem 0;
+}
+
+.tag {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.section {
+  padding: 3.5rem 6vw;
+}
+
+.section h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  margin-top: 0;
+}
+
+.cards {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: rgba(31, 41, 55, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 14px;
+  padding: 1.2rem;
+  backdrop-filter: blur(6px);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+.card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.roadmap ol {
+  padding-left: 1.2rem;
+  max-width: 780px;
+}
+
+.roadmap li {
+  margin-bottom: 0.5rem;
+}
+
+.faq-list details {
+  background: rgba(31, 41, 55, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+footer {
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  text-align: center;
+  color: var(--muted);
+  padding: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #082f49;
+  text-decoration: none;
+  padding: 0.65rem 1.05rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.btn-outline {
+  margin-top: 0;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
