@@ -1,0 +1,8 @@
+<svg width="1200" height="380" viewBox="0 0 1200 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="380" rx="24" fill="#0F172A"/>
+<path d="M600 70L780 120V210C780 285 708 330 600 355C492 330 420 285 420 210V120L600 70Z" fill="#1D4ED8"/>
+<path d="M600 110L740 150V210C740 266 688 305 600 328C512 305 460 266 460 210V150L600 110Z" fill="#DBEAFE"/>
+<path d="M545 206L585 246L660 171" stroke="#15803D" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="75" y="95" fill="#E2E8F0" font-size="34" font-family="Inter" font-weight="800">Secure Jenkins by Design</text>
+<text x="75" y="145" fill="#94A3B8" font-size="24" font-family="Inter">RBAC • Secrets • Patch Management • Auditability</text>
+</svg>

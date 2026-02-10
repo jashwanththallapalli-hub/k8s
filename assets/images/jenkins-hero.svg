@@ -1,0 +1,22 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="520" rx="26" fill="#0F172A"/>
+<circle cx="180" cy="85" r="170" fill="#1E293B"/>
+<circle cx="1110" cy="420" r="210" fill="#1D4ED8" fill-opacity="0.25"/>
+<rect x="60" y="95" width="420" height="330" rx="20" fill="#111827" stroke="#334155"/>
+<text x="92" y="150" fill="#E2E8F0" font-size="32" font-family="Inter" font-weight="700">Jenkins Controller</text>
+<rect x="92" y="185" width="350" height="52" rx="12" fill="#1E293B"/>
+<text x="110" y="218" fill="#93C5FD" font-size="20" font-family="Inter">Queue + Scheduler</text>
+<rect x="92" y="250" width="350" height="52" rx="12" fill="#1E293B"/>
+<text x="110" y="283" fill="#86EFAC" font-size="20" font-family="Inter">Pipeline Engine</text>
+<rect x="92" y="315" width="350" height="52" rx="12" fill="#1E293B"/>
+<text x="110" y="348" fill="#FDE68A" font-size="20" font-family="Inter">Credentials + Plugins</text>
+<rect x="560" y="115" width="240" height="110" rx="16" fill="#1E3A8A"/>
+<text x="600" y="175" fill="#DBEAFE" font-size="24" font-family="Inter" font-weight="700">Linux Agent</text>
+<rect x="850" y="115" width="240" height="110" rx="16" fill="#065F46"/>
+<text x="878" y="175" fill="#D1FAE5" font-size="24" font-family="Inter" font-weight="700">Windows Agent</text>
+<rect x="705" y="285" width="240" height="110" rx="16" fill="#7C2D12"/>
+<text x="742" y="345" fill="#FFEDD5" font-size="24" font-family="Inter" font-weight="700">K8s Pod Agent</text>
+<path d="M480 210H560" stroke="#60A5FA" stroke-width="6"/>
+<path d="M480 270H850" stroke="#34D399" stroke-width="6"/>
+<path d="M480 330H705" stroke="#FDBA74" stroke-width="6"/>
+</svg>

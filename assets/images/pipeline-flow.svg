@@ -1,0 +1,11 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="420" rx="24" fill="#F8FAFC"/>
+<rect x="40" y="160" width="170" height="95" rx="16" fill="#DBEAFE"/><text x="80" y="217" fill="#1D4ED8" font-size="30" font-family="Inter" font-weight="700">Code</text>
+<rect x="260" y="160" width="170" height="95" rx="16" fill="#DCFCE7"/><text x="302" y="217" fill="#15803D" font-size="30" font-family="Inter" font-weight="700">Build</text>
+<rect x="480" y="160" width="170" height="95" rx="16" fill="#FEF3C7"/><text x="532" y="217" fill="#B45309" font-size="30" font-family="Inter" font-weight="700">Test</text>
+<rect x="700" y="160" width="170" height="95" rx="16" fill="#EDE9FE"/><text x="734" y="217" fill="#6D28D9" font-size="30" font-family="Inter" font-weight="700">Scan</text>
+<rect x="920" y="160" width="230" height="95" rx="16" fill="#FECACA"/><text x="975" y="217" fill="#B91C1C" font-size="30" font-family="Inter" font-weight="700">Deploy</text>
+<path d="M220 206H250" stroke="#334155" stroke-width="6"/><path d="M440 206H470" stroke="#334155" stroke-width="6"/><path d="M660 206H690" stroke="#334155" stroke-width="6"/><path d="M880 206H910" stroke="#334155" stroke-width="6"/>
+<text x="40" y="70" fill="#0F172A" font-size="38" font-family="Inter" font-weight="800">Jenkins CI/CD Pipeline</text>
+<text x="40" y="110" fill="#475569" font-size="24" font-family="Inter">Automated quality gates and continuous delivery workflow</text>
+</svg>

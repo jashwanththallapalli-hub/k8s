@@ -1,0 +1,10 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="360" rx="24" fill="#111827"/>
+<text x="50" y="70" fill="#E5E7EB" font-family="Inter" font-size="35" font-weight="800">Advanced Jenkins Engineering</text>
+<path d="M90 250H1110" stroke="#374151" stroke-width="6"/>
+<circle cx="180" cy="250" r="26" fill="#60A5FA"/><text x="140" y="305" fill="#93C5FD" font-size="22" font-family="Inter">Scale</text>
+<circle cx="370" cy="250" r="26" fill="#34D399"/><text x="315" y="305" fill="#86EFAC" font-size="22" font-family="Inter">Dynamic Agents</text>
+<circle cx="590" cy="250" r="26" fill="#FBBF24"/><text x="535" y="305" fill="#FDE68A" font-size="22" font-family="Inter">Shared Libs</text>
+<circle cx="810" cy="250" r="26" fill="#A78BFA"/><text x="760" y="305" fill="#C4B5FD" font-size="22" font-family="Inter">RBAC</text>
+<circle cx="1020" cy="250" r="26" fill="#F87171"/><text x="970" y="305" fill="#FCA5A5" font-size="22" font-family="Inter">Observability</text>
+</svg>
