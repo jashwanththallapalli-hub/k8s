@@ -1,0 +1,7 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="360" rx="24" fill="#F8FAFC"/>
+<text x="45" y="65" fill="#0F172A" font-family="Inter" font-size="35" font-weight="800">Jenkins Interview Preparation</text>
+<rect x="70" y="110" width="320" height="210" rx="16" fill="#DBEAFE"/><text x="145" y="180" fill="#1D4ED8" font-size="28" font-family="Inter" font-weight="700">Beginner</text>
+<rect x="440" y="110" width="320" height="210" rx="16" fill="#DCFCE7"/><text x="510" y="180" fill="#15803D" font-size="28" font-family="Inter" font-weight="700">Intermediate</text>
+<rect x="810" y="110" width="320" height="210" rx="16" fill="#FEE2E2"/><text x="915" y="180" fill="#B91C1C" font-size="28" font-family="Inter" font-weight="700">Advanced</text>
+</svg>
