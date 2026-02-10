@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Jenkins Installation</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body data-module="installation"><div class="layout"><aside class="sidebar"><div class="brand">Jenkins CI/CD Academy</div><p class="subtitle">Module 2: Installation</p><div class="search-wrap"><input data-search placeholder="Search current page..."></div><ul class="nav-list"><li><a href="index.html">1. Introduction</a></li><li><a href="installation.html">2. Installation</a></li><li><a href="core-concepts.html">3. Core Concepts</a></li><li><a href="pipelines.html">4. Pipelines</a></li><li><a href="integration.html">5. Integrations</a></li><li><a href="advanced.html">6. Advanced</a></li><li><a href="architecture.html">7. Architecture</a></li><li><a href="security.html">8. Security</a></li><li><a href="labs.html">9. Labs</a></li><li><a href="interview.html">10. Interview Prep</a></li></ul><div class="sidebar-actions"><button data-theme-toggle>Toggle Dark/Light</button><button class="btn-primary" data-complete>Mark Module Complete</button></div><div class="progress-box"><div class="progress-track"><span></span></div><div class="progress-text"></div></div></aside>
+<main class="content">
+<section class="hero-card search-item"><span class="badge">Module 2</span><h1>Jenkins Installation Guide</h1><p>Set up Jenkins on Linux, Windows, or Docker. After setup, unlock Jenkins, create admin user, and install recommended plugins.</p></section>
+<div class="grid">
+<article class="panel search-item"><h3>Linux (Ubuntu/Debian)</h3><div class="code-wrap"><button class="copy-btn">Copy</button><pre><code>sudo apt update
+sudo apt install -y fontconfig openjdk-17-jre
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt update && sudo apt install -y jenkins
+sudo systemctl enable --now jenkins</code></pre></div></article>
+<article class="panel search-item"><h3>Windows</h3><ul><li>Install Java 17 (Temurin/OpenJDK).</li><li>Download Jenkins MSI installer.</li><li>Run installer as Administrator.</li><li>Open <code>http://localhost:8080</code> and paste initialAdminPassword from Jenkins secrets folder.</li></ul></article>
+<article class="panel search-item"><h3>Docker Installation</h3><div class="code-wrap"><button class="copy-btn">Copy</button><pre><code>docker run -d --name jenkins \
+  -p 8080:8080 -p 50000:50000 \
+  -v jenkins_home:/var/jenkins_home \
+  jenkins/jenkins:lts-jdk17</code></pre></div><p>Best for quick learning and disposable environments.</p></article>
+</div>
+<section class="panel search-item"><h3>Initial Setup Checklist</h3><ul><li>Unlock Jenkins with initial password.</li><li>Install suggested plugins.</li><li>Create first admin user.</li><li>Configure URL, timezone, and email.</li><li>Install key plugins: Git, Pipeline, Docker, Blue Ocean, Credentials Binding.</li></ul></section>
+<p class="footer">Next: Jenkins jobs, agents, workspaces, labels, and executors.</p>
+</main></div><script src="script.js"></script></body></html>

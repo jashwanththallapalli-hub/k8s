@@ -1,103 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jenkins Learning Hub</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <nav class="nav">
-        <div class="logo">Jenkins Learning Hub</div>
-        <a href="#faq" class="btn btn-outline">FAQs</a>
-      </nav>
-      <div class="hero-content">
-        <p class="tag">From beginner to job-ready CI/CD skills</p>
-        <h1>Learn Jenkins with curated resources, roadmap, and FAQs</h1>
-        <p>
-          Everything you need to start and grow with Jenkins: docs, videos,
-          hands-on labs, and interview-focused practice.
-        </p>
-        <a href="#resources" class="btn">Explore Resources</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenkins CI/CD Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-module="introduction">
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">Jenkins CI/CD Academy</div>
+    <p class="subtitle">Beginner → Advanced learning track</p>
+    <div class="search-wrap"><input data-search placeholder="Search current page..." /></div>
+    <ul class="nav-list">
+      <li><a href="index.html">1. Introduction</a></li><li><a href="installation.html">2. Installation</a></li><li><a href="core-concepts.html">3. Core Concepts</a></li>
+      <li><a href="pipelines.html">4. Pipelines</a></li><li><a href="integration.html">5. Integrations</a></li><li><a href="advanced.html">6. Advanced</a></li>
+      <li><a href="architecture.html">7. Architecture</a></li><li><a href="security.html">8. Security</a></li><li><a href="labs.html">9. Labs</a></li><li><a href="interview.html">10. Interview Prep</a></li>
+    </ul>
+    <div class="sidebar-actions"><button data-theme-toggle>Toggle Dark/Light</button><button class="btn-primary" data-complete>Mark Module Complete</button></div>
+    <div class="progress-box"><div class="progress-track"><span></span></div><div class="progress-text"></div></div>
+  </aside>
+  <main class="content">
+    <section class="hero-card search-item"><span class="badge">Module 1</span><h1>Introduction to Jenkins</h1>
+      <p>Jenkins is an open-source automation server used to continuously build, test, and deploy software. In CI/CD workflows, Jenkins orchestrates repetitive engineering tasks so teams can release reliably and faster.</p>
+    </section>
+
+    <h2 class="section-title">Why Jenkins in CI/CD?</h2>
+    <div class="grid">
+      <article class="panel search-item"><h3>Continuous Integration</h3><p>Automatically runs builds and tests for each code push, reducing integration failures and feedback time.</p></article>
+      <article class="panel search-item"><h3>Continuous Delivery</h3><p>Packages and verifies software artifacts so releases remain repeatable and low risk.</p></article>
+      <article class="panel search-item"><h3>Extensible ecosystem</h3><p>2000+ plugins connect Jenkins to GitHub, Kubernetes, Slack, Docker, SonarQube, Terraform, and cloud platforms.</p></article>
+    </div>
+
+    <h2 class="section-title">Jenkins Architecture Overview</h2>
+    <section class="panel search-item">
+      <div class="diagram">
+        <div class="diagram-row">
+          <div class="node">Developers</div><div class="arrow">→</div><div class="node">Git Repository</div><div class="arrow">→</div><div class="node">Jenkins Controller</div>
+        </div>
+        <div class="diagram-row" style="margin-top:.6rem;">
+          <div class="node">Linux Agent</div><div class="node">Windows Agent</div><div class="node">Docker/K8s Agent</div>
+        </div>
       </div>
-    </header>
+      <ul>
+        <li><strong>Controller:</strong> schedules jobs, stores configs, manages credentials and plugins.</li>
+        <li><strong>Agents:</strong> execute builds in parallel and isolate toolchains.</li>
+        <li><strong>Executors:</strong> worker slots on each node deciding concurrent jobs.</li>
+      </ul>
+    </section>
 
-    <main>
-      <section id="resources" class="section">
-        <h2>Top Jenkins Learning Resources</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Official Jenkins Documentation</h3>
-            <p>Best source for installation, pipelines, plugins, and security.</p>
-            <a href="https://www.jenkins.io/doc/" target="_blank" rel="noreferrer">Visit Docs</a>
-          </article>
-          <article class="card">
-            <h3>Jenkins YouTube Tutorials</h3>
-            <p>Visual walkthroughs for freestyle jobs, declarative pipelines, and integrations.</p>
-            <a href="https://www.youtube.com/results?search_query=jenkins+tutorial" target="_blank" rel="noreferrer">Watch Tutorials</a>
-          </article>
-          <article class="card">
-            <h3>Hands-On Labs</h3>
-            <p>Practice creating pipelines, adding stages, and integrating Docker/GitHub.</p>
-            <a href="https://www.jenkins.io/doc/tutorials/" target="_blank" rel="noreferrer">Start Labs</a>
-          </article>
-          <article class="card">
-            <h3>Jenkins Pipeline Syntax Generator</h3>
-            <p>Generate pipeline snippets quickly and understand Jenkinsfile syntax.</p>
-            <a href="https://www.jenkins.io/doc/book/pipeline/syntax/" target="_blank" rel="noreferrer">Open Guide</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section roadmap">
-        <h2>Suggested Jenkins Learning Path</h2>
-        <ol>
-          <li>Understand CI/CD basics and Jenkins architecture.</li>
-          <li>Install Jenkins locally or run with Docker.</li>
-          <li>Create freestyle jobs and connect Git repository.</li>
-          <li>Write Jenkinsfile (declarative pipeline) with stages.</li>
-          <li>Add test/build/deploy steps and notifications.</li>
-          <li>Learn plugins, credentials, and role-based access control.</li>
-          <li>Practice interview questions and troubleshoot failed pipelines.</li>
-        </ol>
-      </section>
-
-      <section id="faq" class="section">
-        <h2>Most Frequently Asked Questions</h2>
-        <div class="faq-list">
-          <details>
-            <summary>What is Jenkins used for?</summary>
-            <p>Jenkins automates software workflows such as building, testing, and deploying applications as part of CI/CD.</p>
-          </details>
-          <details>
-            <summary>Is Jenkins free?</summary>
-            <p>Yes. Jenkins is open-source and free to use, with a large plugin ecosystem.</p>
-          </details>
-          <details>
-            <summary>Do I need coding experience to learn Jenkins?</summary>
-            <p>Basic command-line and Git knowledge is enough to start. Scripting knowledge helps for advanced pipelines.</p>
-          </details>
-          <details>
-            <summary>What is a Jenkinsfile?</summary>
-            <p>A Jenkinsfile is a text file in your repo that defines your CI/CD pipeline as code.</p>
-          </details>
-          <details>
-            <summary>How long does it take to learn Jenkins?</summary>
-            <p>You can learn the basics in 1-2 weeks with regular practice and build production-ready skills in 1-2 months.</p>
-          </details>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>Built for learners who want practical Jenkins mastery.</p>
-    </footer>
-  </body>
+    <section class="panel search-item">
+      <h3>Quick Practical Task</h3>
+      <p>Install Jenkins using Docker, create one freestyle job, and trigger it manually. Verify console logs and build history.</p>
+    </section>
+    <p class="footer">Use the sidebar to continue the guided path.</p>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
 </html>
